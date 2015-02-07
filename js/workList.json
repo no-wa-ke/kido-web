@@ -1,0 +1,294 @@
+{
+    "workitems": [{
+            "id": "rockak01",
+            "sound": "./media/music/rockak01.mp3",
+            "headingone": "'rockak01'",
+            "credits": "| Client: Monopo,Inc",
+            "storeLink": "http://monopo.co.jp"
+        }, 
+        {
+            "id": "analogDigital",
+            "sound": "./media/music/analogOrdigital.mp3",
+            "headingone": "'Analog Or Digital(Remix Preview)'",
+            "credits": "| Wildlife Control",
+            "storeLink": "https://soundcloud.com/wildlifecontrol/analog-or-digital"
+        }, 
+        {
+            "id": "elevateRemix",
+            "sound": "./media/music/elevateRemix.mp3",
+            "headingone": "'Elevate(Remix Preview)'",
+            "credits": "| St.Lucia",
+            "storeLink": "https://soundcloud.com/st-lucia/elevate"
+        },{
+            "id": "lightsout",
+            "sound": "./media/school/lightsOut.mp3",
+            "headingone": "'Lights Out'",
+            "credits": "| Open Studio 2014 Theme Song",
+            "storeLink": "http://www.fnm.geidai.ac.jp/openstudio/2014"
+        },
+        {
+            "id": "toHeaven",
+            "sound": "./media/school/toHeaven.mp3",
+            "headingone": "'To Heaven'",
+            "credits": "| Media Practice 14-15 Theme Song",
+            "storeLink": "http://www.fnm.geidai.ac.jp/media-practice/2015"
+        },
+        {
+            "id": "swell",
+            "sound": "./media/music/rockakHouse.mp3",
+            "headingone": "'Swell'",
+            "credits": "| Client: Monopo,Inc",
+            "storeLink": "http://monopo.co.jp"
+        }, {
+            "id": "rockak02",
+            "sound": "./media/music/rockakHard.mp3",
+            "headingone": "'rockak02'",
+            "credits": "| Client: Monopo,Inc",
+            "storeLink": "http://monopo.co.jp"
+        }, {
+            "id": "hiphop01",
+            "sound": "./media/music/rockackHopRap.mp3",
+            "headingone": "'Music Keeps Me Singing(Rap ver)'",
+            "credits": "| Client: Monopo,Inc",
+            "storeLink": "http://monopo.co.jp"
+        }, {
+            "id": "panasonicwonder",
+            "sound": "./media/music/ragtime.mp3",
+            "headingone": "'wonder rag'",
+            "credits": " | Client:©Shishi Yamazaki,©Panasonic",
+            "frameUrl": "http://shishiyamazaki.tumblr.com/post/65041484730/a-better-life-a-better-world-by-wonder"
+        }, {
+            "id": "callaromance",
+            "SCtrack": "/tracks/21520162",
+            "headingone": "'AM3:33'",
+            "credits": "| KIDO YOJI /©KSR",
+            "storeLink": "https://itunes.apple.com/jp/album/call-a-romance/id472254691#"
+        }, {
+            "id": "holdon",
+            "SCtrack": "/tracks/63603611",
+            "headingone": "'Hold On (Prometones Remix)'",
+            "credits": "|  Tempogeist /©SDC",
+            "storeLink": "https://itunes.apple.com/jp/album/transatlantic-ep/id566826553#"
+        }, {
+            "id": "middleclass",
+            "SCtrack": "/tracks/63562387",
+            "headingone": "'Middle Class (Prometones Remix)'",
+            "credits": "|  Blue Satellite ft.Jhameel ",
+            "storeLink": "https://itunes.apple.com/jp/album/middle-class-the-remixes/id572527658#"
+        }, {
+            "id": "hitsmelikearock",
+            "SCtrack": "/tracks/18576229",
+            "headingone": "'Hits Me Like A Rock(Kido Yoji Remix)'",
+            "credits": "|  CSS/©KSR ",
+            "storeLink": "https://itunes.apple.com/jp/album/hits-me-like-a-rock-ep/id446708598?ign-mpt=uo%3D4#"
+        }, {
+            "id": "walter-miami",
+            "SCtrack": "/tracks/24308532",
+            "headingone": "'Miami (Kido Yoji Remix)'",
+            "credits": "|  Walter Sobsek ",
+            "storeLink": "https://itunes.apple.com/jp/album/miami-remixes-ep/id467446412"
+        }, {
+            "id": "dexter",
+            "sound": "./media/music/lightyears.mp3",
+            "headingone": "'Light Years (Unreleased Remix)'",
+            "credits": "|  Poindexter ",
+            "storeLink": "https://soundcloud.com/poindexter"
+        }, {
+            "id": "interminable",
+            "photosets": [
+                "./media/example/1.jpg",
+                "./media/example/2.jpg",
+                "./media/example/3.jpg",
+                "./media/example/4.jpg",
+                "./media/example/5.jpg",
+                "./media/example/6.jpg",
+                "./media/example/7.jpg"
+            ],
+            "caption": "'Interminable Current'",
+            "type": "Installation",
+            "textsEN": "'Interminable Current' is a sound installation performed by stepping-motors of floppy drives. Each motors are driven by PWMs that are generated from custom software/hardware, which intends to simulate musical notes. "
+        }, 
+         {
+            "id": "propermirror",
+            "photosets": [
+                "./media/propermirror/1.jpg",
+                "./media/propermirror/2.jpg",
+                "./media/propermirror/3.jpg",
+                "./media/propermirror/4.jpg",
+                "./media/propermirror/5.jpg",
+                "./media/propermirror/6.jpg"
+            ],
+            "caption": "'場違いな、あるいは適当な鏡 | (Im)proper Mirror'",
+            "type": "Installation",
+            "textsEN": "",
+            "textsJP": "透過型スクリーンには、展示空間であらかじめ撮影された映像が投影されており、その中には展示台と鏡が置かれている。<br><br>イメージの中の鏡は、淵に仕込まれた超小型のcmosカメラから得られる映像によって、あたかも現実にある鏡のようにこちら側の世界を映す。<br><br>映像では出演者がその鏡に近づいて鑑賞したり、逆にリアルタイムで作品を見ている鑑賞者側に視線を向けるような行動をとる。<br><br>鏡は悪魔で虚構のものとして写るが、そのもの自体は「鏡」としての役割を果たしている。現実と過去という境界を曖昧にすることによって、鑑賞者をリアリティという問題に直面させ、葛藤を生ませる試みを行った。"
+        },{
+            "id": "viscomp",
+            "photosets": [
+                "./media/viscomp/1.jpg",
+                "./media/viscomp/2.jpg"
+            ],
+            "caption": "'viscomp font'",
+            "type": "design",
+            "textsEN": ""
+        }, {
+            "id": "townsequence",
+            "photosets": [
+                "./media/town_sequence/1.jpg",
+                "./media/town_sequence/2.jpg",
+                "./media/town_sequence/3.jpg",
+                "./media/town_sequence/4.jpg"
+            ],
+            "caption": "'townSequence'",
+            "type": "Installation",
+            "textsEN": "This is an interactive installation work using light sensors/ a cloth screen. Audiences can use installed searchlight to discovor reactable objects that are projected on the screen, which devotes them in to incomrehensible moment where past and present co-exist",
+            "textsJP": "スクランブル交差点のシーケンスが映ったスクリーンの世界に鑑賞者は懐中電灯の光を使い、過去に記録されたイメージと干渉する",
+            "videoUrl": "https://player.vimeo.com/video/78458456?api=1&player_id=vimeo_player"
+        }, {
+            "id": "flayingtv",
+            "photosets": [
+                "./media/flayingTV/1.jpg",
+                "./media/flayingTV/2.jpg",
+                "./media/flayingTV/3.jpg",
+                "./media/flayingTV/4.jpg",
+                "./media/flayingTV/5.jpg",
+                "./media/flayingTV/6.jpg",
+                "./media/flayingTV/7.jpg"
+            ],
+            "caption": "'Flaying TV'",
+            "type": "Installation",
+            "textsEN": "",
+            "textsJP": "|Flaying TV|は会場に設置されたテレビの前にいる鑑賞者の顔の画像と、リアルタイムで放送されているテレビ番組に写る人物の顔の画像をモーフィングし、合成するプログラムを利用したインスタレーションである。切り取られた鑑賞者のテクスチャは、画面の中の人物の顔に吸着し、「皮の仮面」を被った様なイメージが映し出される。<br><br>テレビはおよそ30年の間、殆どの人がほぼ毎日接触するメディアであり 続けている。徹底的に合理化されたコンテンツが休み無く放送されており、私たちはその内容を受動的に受け入れてしまう。そこから止めどなく流れてくる記号が、私たちの思考や判断の「規範」を形成する要素になってしまっているのは明らかである。そんな中私はテレビに最も頻繁に流れてくる「人の顔」という視覚的な情報に注目した。<br><br>私たちが営んでいる生活は、いわば主体と客体の相互作用で成り立っている。生活をそのような大きな枠で捉え直せば、そこに関与している「顔」の役割は極めて大きいといえるのではないか。なぜなら私たち人間は、すべからく顔を有した存在であるからだ。対人関係において、人の印象（イメージ）を形成する手がかりには、話し方・声・動作・服装・匂い等、様々な要因が挙げられるが、その中でも顔や表情が第一印象に大きな影響を持っていることは、誰もが認めるだろう。テレビに映るタレントやキャスター、俳優等の顔はその印象の「規範」になっていると考えている。<br><br>自らの皮を剥ぎ、合理化されたコンテンツに対して「悪戯」を仕掛け、鑑賞者は一体どのようにこの作品と関わるのだろうか"
+            
+        },
+        {
+            "id": "inparis",
+            "photosets": [
+                "./media/inparis/1.jpg",
+                "./media/inparis/2.jpg",
+                "./media/inparis/3.jpg",
+                "./media/inparis/4.jpg",
+                "./media/inparis/5.jpg",
+                "./media/inparis/6.jpg",
+                "./media/inparis/7.jpg",
+                "./media/inparis/8.jpg",
+                "./media/inparis/9.jpg",
+                "./media/inparis/10.jpg"
+            ],
+            "caption": "'Meanwhile in Paris'",
+            "type": "design",
+            "textsEN": "",
+            "textsJP": "",
+            "poster":"./media/inparis/cover.jpg",
+            "videoLocal": "./media/inparis/hugo.mp4"
+        }, {
+            "id": "bsp",
+            "photosets": [
+                "./media/pareidolia/1.jpg",
+                "./media/pareidolia/2.jpg",
+                "./media/pareidolia/3.jpg"
+            ],
+            "caption": "'ブラウザ衛星☆パレイドリア | Browser Satellite Paleidoria'",
+            "type": "Installation",
+            "textsEN": "",
+            "textsJP": "ブラウザ衛星☆パレイドリアは顔認識のプログラムを利用し、衛星写真(提供:Google Maps)から”人の顔らしきイメージ”を探しまくるプロジェクトです。<br><br><a href=\"https://github.com/no-wa-ke/BSPareidolia\">https://github.com/no-wa-ke/BSPareidolia</a>"
+        },
+        {
+            "id": "abookofmotion",
+            "photosets": [
+                "./media/abookofmotion/1.jpg",
+                "./media/abookofmotion/2.jpg",
+                "./media/abookofmotion/3.jpg",
+                "./media/abookofmotion/4.jpg",
+                "./media/abookofmotion/5.jpg",
+                "./media/abookofmotion/6.jpg"
+            ],
+            "caption": "'A book of motion'",
+            "type": "design",
+            "textsEN": "",
+            "textsJP": "dailymotiongraphicの一部をスキャニメーションという技法を使い本にまとめた。<br><br>スキャニメーションを作るプログラムも作成。",
+            "videoUrl": "https://player.vimeo.com/video/78448202?api=1&player_id=vimeo_player"
+        }, {
+            "id": "dmge",
+            "photosets": [
+                ""
+            ],
+            "caption": "'daily motion graphic experiments'",
+            "type": "design",
+            "textsEN": "",
+            "textsJP": "",
+            "frameUrl": "http://dailymotiongraphicexperiment.tumblr.com"
+        }, {
+            "id": "uglyduck",
+            "photosets": [
+                ""
+            ],
+            "caption": "'ugly duckling'",
+            "type": "App",
+            "textsEN": "",
+            "textsJP": "",
+            "frameUrl": "./cursor.html"
+        }, {
+            "id": "kharuna",
+            "photosets": [
+                ""
+            ],
+            "caption": "'Kosaka Haruna Web Page'",
+            "type": "web",
+            "textsEN": "",
+            "textsJP": "",
+            "frameUrl": "http://harunakosaka.com"
+        }, {
+            "id": "akemashite",
+            "photosets": [
+                "./media/akemashite/1.jpg",
+                "./media/akemashite/2.jpg"
+            ],
+            "caption": "'あけまして();'",
+            "type": "design",
+            "poster":"./media/akemashite/1.jpg",
+            "textsEN": "",
+            "textsJP": "無限に祝われる年賀状です",
+            "videoLocal": "./media/akemashite/akemashite.mp4"
+        }, {
+            "id": "silas",
+            "photosets": [
+                "./media/silas/1.jpg",
+                "./media/silas/2.jpg"
+            ],
+            "caption": "'Silas T-shirt'",
+            "type": "design",
+            "textsEN": "",
+            "textsJP": ""
+        }, {
+            "id": "decay",
+            "photosets": [
+                "./media/decay/1.jpg",
+                "./media/decay/2.jpg",
+                "./media/decay/3.jpg"
+            ],
+            "caption": "'decay'",
+            "type": "design",
+            "textsEN": "",
+            "textsJP": "プログラムによるグリッチのスタディを本にまとめた。日本で合理的に理想化されたサクラをモチーフにした。"
+        }, {
+            "id": "gravity",
+            "photosets": [
+                "./media/gravity/1.jpg"
+            ],
+            "caption": "'gravity'",
+            "type": "design",
+            "textsEN": "",
+            "textsJP": ""
+        }, {
+            "id": "mineral",
+            "photosets": [
+                "./media/mineral/1.jpg"
+            ],
+            "caption": "'Light Years'",
+            "type": "design",
+            "textsEN": "",
+            "textsJP": ""
+        }
+    ]
+}

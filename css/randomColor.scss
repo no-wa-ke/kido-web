@@ -1,0 +1,51 @@
+
+
+
+
+@mixin randomColor($prop:background, $opaque:false) {
+  @if ($opaque == false) {
+    #{$prop}: rgba((random(255)),(random(255)),(random(255)), random());
+  } @else {
+    #{$prop}: rgba((random(255)),(random(255)),(random(255)), 1);
+  }
+};
+
+.column {
+  float: left;
+  width: random(200)+100 + px;
+  width: 25%;
+}
+
+@each $col in col-1, col-2, col-3, col-4 {
+  div.#{$col} {
+    @include randomColor(background, false)
+  }
+  @each $div in a, b, c, d, e {
+    div.#{$col} div.#{$div} {
+      width: 100px;
+      height: random(100)+10 + px;
+      @include randomColor();
+      
+      &:hover {
+        @include randomColor();
+      }
+    }
+  }
+}
+
+@-webkit-keyframes colorize {
+  0% { 
+    @include randomColor(background, true);
+  }
+  100% {
+    @include randomColor(background, true);
+  }
+}
+@-webkit-keyframes colorize {
+  0% { 
+    @include randomColor(background, true);
+  }
+  100% {
+    @include randomColor(background, true);
+  }
+}

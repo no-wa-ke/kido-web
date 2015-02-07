@@ -1,0 +1,281 @@
+  /***************************/
+/*** COULEURS ILL STUDIO ***/
+/***************************/
+
+/*
+BACKGROUND -> #FFFFFF;
+GRIS TEXTE -> #151215;
+GRIS LOGO  -> #272622;
+*/
+
+
+*{
+  margin:0px;
+  padding:0px;
+    font-family: "futura", sans-serif;
+  text-decoration:none;
+  font-size:9px;
+  line-height:13px
+}
+img  {
+  border:0px;
+}
+* a{
+  color:#151215;
+  outline: none;
+}
+* a:hover{
+  color:#151215;
+  text-decoration:underline;
+}
+.clear{
+  clear:both;
+  font-size:1px;
+  margin:0px;
+}
+.gris{
+  color:#A7A7A4;
+}
+p{
+  margin:0px 0px 0px 0px;
+}
+body {
+  width:100%;
+  height:100%;
+  font-size:11px;
+  background-color:#FFFFFF;
+  color:#151215;
+}
+
+#header{
+  height:100px;
+  position:fixed;
+  width:730px;
+  padding-top:25px;
+}
+
+#main{
+  width:80%;
+  overflow:auto;
+  position:fixed;
+  top:120px;
+  margin-left:100px;
+  padding-top:5px;
+}
+
+
+
+
+
+/*********************/
+/*** WORKS PREVIEW ***/
+/*********************/
+#thumb{
+  float:left;
+  margin-right:15px;
+}
+#thumb p{
+  width:auto;
+  text-align:left;
+  margin-bottom:15px;
+  margin-top:2px;
+}
+.thumbDisable , #thumb.thumbDisable:hover{
+  filter:alpha(opacity=20);/* IE*/
+  -moz-opacity:.20;/* Mozilla*/
+  opacity:.20; /*g�n�rale*/
+  cursor:default;
+}
+#main_work .img{
+  float:left;
+  margin-right:10px;
+  margin-top:25px;
+  z-index:0;
+}
+#work_information{
+  margin-left:415px;
+  position:absolute;
+  z-index:1;
+  background-color:#FFFFFF;
+  padding:1px 10px 5px 10px;
+  width:490px;
+}
+#work_information h1{
+  font-weight:bold;
+  margin-top:0px;
+  padding-top:0px;
+}
+#work_information h2{
+  font-weight:normal;
+}
+#work_information h3, #work_information h3 a{
+  text-decoration:none;
+  font-weight:normal;
+  margin-top:20px;
+
+}
+#work_information h3 a:hover{
+  text-decoration:underline;
+}
+#more_info{
+  width:410px;
+  padding:10px 10px;
+  margin-top:5px;
+  left:0px;
+  background-color:#FFFFFF;
+  position:absolute;
+  z-index:1;
+  display:none;
+}
+/***********/
+/*** FIN ***/
+/***********/
+
+
+
+
+
+
+/************************/
+/*** STYLE ACTUALITES ***/
+/************************/
+#actualites_container{
+  border-top:solid 14px #272622;
+  width:500px;
+}
+
+#actualite{
+  width:500px;
+  margin-bottom:20px;
+  font-size:10px;
+
+}
+#actualite, #actualite p, #actualite a {
+  font-size:10px;
+}
+#actualite h1{
+  width:500px;
+  font-size:21px;
+  font-family:Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  margin:20px 0px 20px 0px;
+}
+#actualite h3{
+  width:494px;
+  background-color:#272622;
+  color:#FFFFFF;
+
+  font-weight:normal;
+  font-size:9px;
+  padding:0px 3px 2px 3px;
+  margin:1px 0px;
+  margin-top:20px;
+
+}
+
+#actualite img{
+  margin-bottom:20px;
+}
+/***********/
+/*** FIN ***/
+/***********/
+
+
+
+
+
+
+
+/************************/
+/*** STYLE ABOUT ***/
+/************************/
+#about{
+  width:355px;
+  float:left;
+  margin-right:20px;
+  text-align:justify;
+}
+
+#about h3{
+  width:349px;
+  background-color:#272622;
+  color:#FFFFFF;
+
+  font-weight:normal;
+  font-size:9px;
+  padding:0px 3px 2px 3px;
+  margin-top:30px;
+}
+
+/***********/
+/*** FIN ***/
+/***********/
+
+
+
+
+
+/***********************/
+/*** STYLE DU HEADER ***/
+/***********************/
+#logo {
+  float:left;
+  margin-left:25px;
+  margin-right:25px;
+  width:50px;
+  background-color:#272622;
+}
+#menu,#sous_menu {
+  float:left;
+  margin-right:42px;
+}
+#menu li , #sous_menu li {
+  list-style:none;
+  width:114px;
+  background-color:none;
+  padding:0px 3px 1px 3px;
+  margin:1px 0px;
+  text-decoration:none;
+}
+
+li.MenuOn, li.MenuOn a, li.MenuOn a:hover{
+  background-color:#272622;
+  color:#FFFFFF;
+  cursor:pointer;
+}
+.MenuOff {
+  background-color:#none;
+  color:#151215;
+}
+
+.MenuSelected {
+  background-color:#272622;
+  color:#FFFFFF;
+  font-weight:bold;
+  cursor:pointer;
+}
+#navigation{
+  top:125px;
+  margin-left:100px;
+  position:absolute;
+  z-index:1;
+}
+#navigation .navigationDisabled,#navigation .navigationDisabled a,#navigation .navigationDisabled a:hover{
+  text-decoration:none;
+  cursor:pointer;
+  display:none;
+}
+/***********/
+/*** FIN ***/
+/***********/
+
+
+/***************************/
+/*** STYLE DE PAGINATION ***/
+/***************************/
+ #pagination {
+   width:500px;
+   clear:both;
+   padding:20px 0px;
+   text-align:center;
+}
