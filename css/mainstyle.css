@@ -112,6 +112,7 @@ h3.ctitle {
     background-color: rgba(255, 255, 255, 0.7);
 }
 #floatPage {
+    
     display: none;
     position: fixed;
     z-index: 1000000000;
@@ -1524,7 +1525,7 @@ a[rel=PrettyPhoto] {
     min-height: 180px
 }
 .grid-item-on-hover, span.item-on-hover {
-    cursor: url(../images/middleFinger.png), pointer;
+    cursor: url(../images/magnifying-glass.png), default;
     display: block;
     opacity: 0;
     position: absolute;
@@ -1733,7 +1734,7 @@ a[rel=PrettyPhoto] {
     content: ' ';
     display: block;
     margin-top: 10px;
-    background: url(../images/magnifying-glass.png) 0 0/100% auto no-repeat;
+    /*background: url(../images/magnifying-glass.png) 0 0/100% auto no-repeat;*/
     height: 26px;
     width: 20px
 }
@@ -4098,6 +4099,7 @@ div.introcontent {
         font-size: 13px;
     }
     #floatPage .floatInner {
+
         margin-left: auto;
         margin-right: auto;
         width: 98%;
