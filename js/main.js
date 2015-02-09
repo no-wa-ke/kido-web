@@ -578,7 +578,6 @@ $(document).ready(function() {
         }
 
     );
-
     //-------------------------------------
 
     $("a.external").click(function(e) {
