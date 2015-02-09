@@ -1,28 +1,41 @@
 var checked = null; 
+
 function distraction() {
     var size = 0;
     var counter = 0;
     var increase = Math.PI * 2 / 100;
     var textcount = 0;
-    var characterset = [
-        ".·'˘'·.,,,><((((°<",
-        ".'˘'··.,,.><((((°<",
-        "'˘'··.,,.·><((((°<",
-        "˘'··.,,.·'><((((°<",
-        "'··.,,.·'˘><((((°<",
-        "··.,,.·'˘'><((((°<",
-        "·.,,.·'˘'·><((((°<",
-        ".,,.·'˘'··><((((°<",
-        ",,.·'˘'··.><((((°<",
-        ",.·'˘'··.,><((((°<",
-        ".·'˘'··.,,><((((°<"
+        var characterset = [
+        "¸.·´¯`·.´¯`·.¸¸.·´¯`·.¸><(((º>",
+        ".·´¯`·.´¯`·.¸¸.·´¯`·.¸¸><(((º>",
+        "·´¯`·.´¯`·.¸¸.·´¯`·.¸¸.><(((º>",
+        "´¯`·.´¯`·.¸¸.·´¯`·.¸¸.·><(((º>",
+        "¯`·.´¯`·.¸¸.·´¯`·.¸¸.·´><(((º>",
+        "`·.´¯`·.¸¸.·´¯`·.¸¸.·´¯><(((º>",
+        "·.´¯`·.¸¸.·´¯`·.¸¸.·´¯`><(((º>",
+        ".´¯`·.¸¸.·´¯`·.¸¸.·´¯`·><(((º>",
+        "´¯`·.¸¸.·´¯`·.¸¸.·´¯`·.><(((º>",
+        "¯`·.¸¸.·´¯`·.¸¸.·´¯`·.´><(((º>",
+        "`·.¸¸.·´¯`·.¸¸.·´¯`·.´¯><(((º>",
+        "·.¸¸.·´¯`·.¸¸.·´¯`·.´¯`><(((º>",
+        ".¸¸.·´¯`·.¸¸.·´¯`·.´¯`·><(((º>",
+        "¸¸.·´¯`·.¸¸.·´¯`·.´¯`·.><(((º>",
+        "¸.·´¯`·.¸¸.·´¯`·.´¯`·.¸><(((º>",    
+        ".·´¯`·.¸¸.·´¯`·.´¯`·.¸¸><(((º>",
+        "·´¯`·.¸¸.·´¯`·.´¯`·.¸¸.><(((º>",
+        "´¯`·.¸¸.·´¯`·.´¯`·.¸¸.·><(((º>",
+        "¯`·.¸¸.·´¯`·.´¯`·.¸¸.·´><(((º>",
+        "`·.¸¸.·´¯`·.´¯`·.¸¸.·´¯><(((º>",
+        "·.¸¸.·´¯`·.´¯`·.¸¸.·´¯`><(((º>",
+        ".¸¸.·´¯`·.´¯`·.¸¸.·´¯`·><(((º>",
+        "¸¸.·´¯`·.´¯`·.¸¸.·´¯`·.><(((º>"  
     ];
     setInterval(function() {
         //console.clear();
         var animation = "";
         size = Math.sin(counter) / 2 + 1;
         counter += increase;
-        if (counter > Math.PI * 4) {
+        if (counter > Math.PI * 6) {
             counter = 0;
             console.clear();
             
@@ -38,11 +51,11 @@ function distraction() {
             // todo:better clear issue
         }
 
-       animation = "%c"+characterset[textcount] +'';
-       var style ='font-weight:thin; font-size: ' +size*30. + 'px; color:#fff000;font-family:Arial;';
+       animation = "%c"+characterset[textcount]+"";
+       var style ='font-size: ' +size*30. + 'px; color:#ff0099';
         console.log(animation,style);
 
-    }, 140)
+    }, 60)
 
 }
 
@@ -78,7 +91,7 @@ function postLoad() {
                     var result = "";
                     var appendItem = "";
                     for (p = 0; p < 3; p++) {
-                        console.log()
+                        // console.log()
                         appendItem = '<img src="' + photosets[p]['photo-url-250'] + '" alt=" ">';
                         result = result + appendItem;
 
@@ -135,9 +148,9 @@ function checkURL() {
         var urlHash = location.hash;
         var jumpTag = "_";
         if (urlHash.indexOf(jumpTag) != -1) {
-            console.log(urlHash);
+            // console.log(urlHash);
             urlHash = urlHash.replace("_", "");
-            console.log(urlHash);
+            // console.log(urlHash);
 
         }
         $(urlHash).click();
@@ -221,6 +234,7 @@ function ready(e) {
 }
 
 function do_work(e) {
+
 /*      // vimeo api. no good for IE8~
     var n = t;
     $(".workitembutton").each(function() {
@@ -245,6 +259,7 @@ function do_work(e) {
         })
     });
 */
+
     $(".workitembutton-music").each(function() {
         var t = $(this);
         var r = t.attr("id");
@@ -334,8 +349,8 @@ function do_work(e) {
 
 
 function do_video(e, t, n) {
-    console.log(e);
-    console.log("play " + t);
+    // console.log(e);
+    // console.log("play " + t);
     $(".video-buffer").show();
     $(".workitemreveal_player").show();
     $(".headingone").html(e.headingone);
@@ -352,8 +367,8 @@ function do_music(e, t) {
     $(".mtitle").empty();
     $(".mcredits").empty();
     $(".mLink").empty();
-    console.log(e);
-    console.log("play-music " + t);
+    // console.log(e);
+    // console.log("play-music " + t);
     // $(".").show();
     $("#musicPlayer").fadeIn("slow");
     $(".mtitle").append('<p>' + e.headingone + '</p>');
@@ -362,14 +377,14 @@ function do_music(e, t) {
         $(".mLink").append('<p><a href =' + e.storeLink + '>' + "| >> LINK" + "</a></p>");
     }
     if (e.sound) { //soundcloud
-        console.log(e.sound);
+        // console.log(e.sound);
         document.getElementById('audio_player').src = e.sound;
         document.getElementById('audio_player').play();
     } else if (e.SCtrack) {
         SC.initialize({
             client_id: '38999f633a89e919b74162de27fb5f5d' //Demo ID prometones
         });
-        console.log(e.SCtrack);
+        // console.log(e.SCtrack);
         SC.get(e.SCtrack, {}, function(sound) {
             // alert("Sound URI: " + sound.uri+"/stream?client_id=38999f633a89e919b74162de27fb5f5d");//debug
             document.getElementById('audio_player').src = sound.uri + "/stream?client_id=38999f633a89e919b74162de27fb5f5d"
@@ -442,8 +457,8 @@ function do_Big(e, t) {
 
     }
 
-    console.log(e);
-    console.log("show-page " + t);
+    // console.log(e);
+    // console.log("show-page " + t);
 
     $("#bigPage").fadeIn("slow");
 
@@ -525,7 +540,7 @@ $(document).ready(function() {
         target.className = target.className + result;
         var _result = ".track" + startOne;
         $(_result).append('<div class = "trackNumber">' + "♫" + '</div>');
-        console.log(_result);
+        // console.log(_result);
 
     }
 
