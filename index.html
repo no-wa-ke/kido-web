@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- facebook -->
     <meta property="og:title" content="KIDO YOJI|つくったもの" />
-    <meta property="og:description" content="Music,Installation,Scraps,etc"/>
+    <meta property="og:description" content="Music,Installation,Scraps,etc" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://kidoyoji.com" />
     <meta property="og:image" content="http://kidoyoji.com/images/screenShot.jpg" />
@@ -841,13 +841,10 @@
     <!-- ISOTOPE -->
     <script type="text/javascript" src="./js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="./js/custom-isotope.js"></script>
-    
-
     <!-- CUSTOM -->
     <script type="text/javascript" src="./js/imagesloaded.js"></script>
     <script src="//connect.soundcloud.com/sdk.js"></script>
-    <!-- // <script type="text/javascript" src="./js/parallax/jquery.parallax.js"></script> -->
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main.min.js"></script>
     <script type="text/javascript" src="./js/musicplayer.js"></script>
 
 
@@ -873,10 +870,10 @@
     ga('create', 'UA-59391945-1', 'auto');
     ga('send', 'pageview');
 
-$('#analogDigital').on('click', function() {
-  ga('send', 'event', 'button', 'click', 'nav-buttons');
-});
-
+    $('#analogDigital').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'nav-buttons');
+    });
+    
     </script>
 
 

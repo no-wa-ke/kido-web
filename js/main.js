@@ -1,4 +1,50 @@
-var checked = null; // url checker
+var checked = null; 
+function distraction() {
+    var size = 0;
+    var counter = 0;
+    var increase = Math.PI * 2 / 100;
+    var textcount = 0;
+    var characterset = [
+        ".·'˘'·.,,,><((((°<",
+        ".'˘'··.,,.><((((°<",
+        "'˘'··.,,.·><((((°<",
+        "˘'··.,,.·'><((((°<",
+        "'··.,,.·'˘><((((°<",
+        "··.,,.·'˘'><((((°<",
+        "·.,,.·'˘'·><((((°<",
+        ".,,.·'˘'··><((((°<",
+        ",,.·'˘'··.><((((°<",
+        ",.·'˘'··.,><((((°<",
+        ".·'˘'··.,,><((((°<"
+    ];
+    setInterval(function() {
+        //console.clear();
+        var animation = "";
+        size = Math.sin(counter) / 2 + 1;
+        counter += increase;
+        if (counter > Math.PI * 4) {
+            counter = 0;
+            console.clear();
+            
+        }
+
+        textcount++;
+
+        if (textcount >= characterset.length) {
+            textcount = 0;
+
+        }
+        if (textcount >= 0){
+            // todo:better clear issue
+        }
+
+       animation = "%c"+characterset[textcount] +'';
+       var style ='font-weight:thin; font-size: ' +size*30. + 'px; color:#fff000;font-family:Arial;';
+        console.log(animation,style);
+
+    }, 140)
+
+}
 
 function postLoad() {
 
@@ -144,7 +190,7 @@ function show_contact(e) {
 
 function init_work() {
 
-        ready()
+    ready()
 
 }
 
@@ -169,7 +215,7 @@ function addEvent(e, t, n) {
 
 function ready(e) {
 
-        get_playlist()
+    get_playlist()
 
 
 }
@@ -217,7 +263,7 @@ function do_work(e) {
                     }
                     $("#blogwrap").empty();
                     $("#blogwrap").height(0);
-               
+
 
 
                 }
@@ -243,7 +289,7 @@ function do_work(e) {
                     }
                     $("#blogwrap").empty();
                     $("#blogwrap").height(0);
-               
+
 
                 }
             }
@@ -270,7 +316,7 @@ function do_work(e) {
 
                     $("#blogwrap").empty();
                     $("#blogwrap").height(0);
-                    
+
 
                 }
             }
@@ -297,7 +343,7 @@ function do_video(e, t, n) {
     $("#vimeo_player").attr("src", e.video);
     $("#vimeo_player").hide();
     $(".workitemreveal_player").fitVids()
-   
+
 }
 
 function do_music(e, t) {
@@ -334,7 +380,7 @@ function do_music(e, t) {
 
     // $("#musicPlayer").hide();
     $(".workitemreveal_player").fitVids()
-    
+
 }
 
 function do_page(e, t) {
@@ -347,14 +393,14 @@ function do_page(e, t) {
     $(".cinfoEN").empty();
     $(".cinfoJP").empty();
 
-    if (e.videoUrl&&!e.videoLocal) { //if there is no vid, then hide element to pack up empty space   
-         $(".localCase").hide();
+    if (e.videoUrl && !e.videoLocal) { //if there is no vid, then hide element to pack up empty space   
+        $(".localCase").hide();
         $(".fvideo").show();
         $(".fvideo").attr("src", e.videoUrl);
 
     }
-    if (e.videoLocal&&!e.videoUrl) { //if there is no vid, then hide element to pack up empty space   
-         $(".fvideo").hide();
+    if (e.videoLocal && !e.videoUrl) { //if there is no vid, then hide element to pack up empty space   
+        $(".fvideo").hide();
         $(".localCase").show();
         $(".lvideo").attr("src", e.videoLocal);
 
@@ -498,6 +544,7 @@ $(document).ready(function() {
 
     init_work();
     totop();
+    distraction();
     // nav_toggles();
 
 
@@ -622,12 +669,7 @@ $(document).ready(function() {
             $("#pgb").show();
         }
 
-           $(window).scrollTop(0);  
-    });
-
-
-$("#wapper div").click(function()  {
-         // do the test straight away
+        $(window).scrollTop(0);
     });
 
 
