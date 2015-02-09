@@ -143,15 +143,13 @@ function show_contact(e) {
 }
 
 function init_work() {
-    var e = $("#vimeo_player")[0];
-    var t = $f(e);
-    t.addEvent("ready", function() {
-        ready("vimeo_player")
-    })
+
+        ready()
+
 }
 
 function get_playlist(e) {
-    AJAX_JSON_Req("js/workList.json", e)
+    AJAX_JSON_Req("js/workList.json")
 }
 
 function scrollToAnchor(e) {
@@ -170,39 +168,35 @@ function addEvent(e, t, n) {
 }
 
 function ready(e) {
-    var t = document.getElementById(e).parentNode.parentNode,
-        n = $f(e);
-    if (playlist_loaded === false) {
-        get_playlist(n)
-    } else {
-        $("#vimeo_player").show();
-        $(".video-buffer").fadeOut();
-    }
+
+        get_playlist()
+
+
 }
 
-function do_work(e, t) {
-    var n = t;
-    $(".workitembutton").each(function() {
-        var t = $(this);
-        var r = t.attr("id");
-        t.on("click", function(t) {
-            t.preventDefault();
-            $("#options.activatemobilemenu").toggleClass("activatemobilemenu");
-            var i = e.workitems;
-            for (var s in i) {
-                if (i[s].id == r) {
-                    if ($("#sticker-sticky-wrapper").width() <= 754) {
-                        window.location.href = i[s].video.toString()
-                    } else {
-                        do_video(i[s], r, n)
-                        location.hash = i[s].id.toString();
-                        $("#blogwrap").empty();
-                        $("#blogwrap").height(0);
-                    }
-                }
-            }
-        })
-    });
+function do_work(e) {
+    // var n = t;
+    // $(".workitembutton").each(function() {
+    //     var t = $(this);
+    //     var r = t.attr("id");
+    //     t.on("click", function(t) {
+    //         t.preventDefault();
+    //         $("#options.activatemobilemenu").toggleClass("activatemobilemenu");
+    //         var i = e.workitems;
+    //         for (var s in i) {
+    //             if (i[s].id == r) {
+    //                 if ($("#sticker-sticky-wrapper").width() <= 754) {
+    //                     window.location.href = i[s].video.toString()
+    //                 } else {
+    //                     do_video(i[s], r, n)
+    //                     location.hash = i[s].id.toString();
+    //                     $("#blogwrap").empty();
+    //                     $("#blogwrap").height(0);
+    //                 }
+    //             }
+    //         }
+    //     })
+    // });
 
     $(".workitembutton-music").each(function() {
         var t = $(this);
@@ -214,7 +208,7 @@ function do_work(e, t) {
             for (var s in i) {
                 if (i[s].id == r) {
 
-                    do_music(i[s], r, n)
+                    do_music(i[s], r)
 
                     if (history.pushState) { //restrict jumping function of hashtag
                         history.pushState(null, null, "#_" + i[s].id.toString())
@@ -241,7 +235,7 @@ function do_work(e, t) {
             for (var s in i) {
                 if (i[s].id == r) {
                     location.hash = i[s].id.toString();
-                    do_page(i[s], r, n)
+                    do_page(i[s], r)
                     if (history.pushState) { //restrict jumping function of hashtag
                         history.pushState(null, null, location.hash);
                     } else {
@@ -267,7 +261,7 @@ function do_work(e, t) {
                 if (i[s].id == r) {
                     location.hash = i[s].id.toString();
 
-                    do_Big(i[s], r, n)
+                    do_Big(i[s], r)
                     if (history.pushState) { //restrict jumping function of hashtag
                         history.pushState(null, null, location.hash);
                     } else {
@@ -284,7 +278,7 @@ function do_work(e, t) {
     });
 
     $(".close").click(function() {
-        n.api("unload");
+        // n.api("unload");
         $(".workitemreveal_player").fadeOut("slow")
     })
 }
@@ -306,7 +300,7 @@ function do_video(e, t, n) {
    
 }
 
-function do_music(e, t, n) {
+function do_music(e, t) {
 
     $(".mtitle").empty();
     $(".mcredits").empty();
@@ -343,7 +337,7 @@ function do_music(e, t, n) {
     
 }
 
-function do_page(e, t, n) {
+function do_page(e, t) {
     // clean up page
     $(".video-buffer").hide();
     $("#vimeo_player").hide();
@@ -389,7 +383,7 @@ function do_page(e, t, n) {
 
 }
 
-function do_Big(e, t, n) {
+function do_Big(e, t) {
 
     if (e.frameUrl) { //if there is no vid, then hide element to pack up empty space   
         $(".fPage").show();
@@ -448,7 +442,7 @@ function AJAX_JSON_Req(e, t) {
             var e = JSON.parse(n.responseText);
             var r = e;
             playlist_loaded = true;
-            do_work(r, t)
+            do_work(r)
         }
     };
     n.send()
