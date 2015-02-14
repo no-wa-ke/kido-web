@@ -15,18 +15,19 @@
   z-index: 1000000000;
 /*  top: 0;*//*
   right: 0;*/
-  top:50%;
-  right:50%;
+  background-color:#fff000;
+  top:0;
+  /*right:50%;*/
   margin-left:auto;
   margin-right:auto;
-  height: 5rem;
-  width: 5rem;
+  height: 1rem;
+  width: 1rem;
 }
 
 .pace .pace-progress:after {
   display: block;
   position: fixed;
-  top:50%;
+  top:0;
   right:50%;
   height: 5rem;
   width: 5rem;
@@ -34,8 +35,8 @@
   margin-right:auto;
   content: attr(data-progress-text);
   font-family: "Helvetica Neue", sans-serif;
-  font-weight: 100;
-  font-size: 5rem;
+  /*font-weight: 100;*/
+  font-size: 0rem;
   line-height: 1;
   text-align: right;
   color: `Color(args.color || '#000').clearer(0.8).rgbString()`;
