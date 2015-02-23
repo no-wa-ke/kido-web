@@ -3800,21 +3800,20 @@ div.introcontent {
         color: #7f7f7f
     }
     section#options {
-        display: inline-block;
-        position: absolute;
-        top: 25px;
-        left: auto;
-        right: 0;
-        height: 0;
-        z-index: 99999999;
-        background: white;
-        );
-        box-sizing: border-box;
-        transition: height .3s;
-        margin-top: 46px;
-        padding: 0;
-        width: 120px;
-        border-top: 1px solid #ccc
+display: inline-block;
+position: absolute;
+top: 43px;
+left: auto;
+right: 0;
+height: 0;
+z-index: 99999999;
+background: rgba(247,247,247,.9);
+box-sizing: border-box;
+transition: height .3s;
+margin-top: 46px;
+padding: 0;
+width: 120px;
+/* border-top: 1px solid #ccc; */
     }
     section#options.activatemobilemenu {
         height: auto
