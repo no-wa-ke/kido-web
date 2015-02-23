@@ -35,7 +35,7 @@ function distraction() {
         var animation = "";
         size = Math.sin(counter) / 2 + 1;
         counter += increase;
-        if (counter > Math.PI * 6) {
+        if (counter > Math.PI * 4) {
             counter = 0;
             console.clear();
             
@@ -52,7 +52,7 @@ function distraction() {
         }
 
        animation = "%c"+characterset[textcount]+"";
-       var style ='font-size: ' +size*30. + 'px; color:#ff0099';
+       var style ='font-size: ' +size*20+ 'px; color:#ff0099;line-height:'+size*2+';';
         console.log(animation,style);
 
     }, 60)
@@ -112,6 +112,7 @@ function postLoad() {
                 if (player.indexOf("vine") != -1) {
 
                     $("#blogwrap").append('<li class="grid-item blogposts"></div><a href="' + url + '"class="' + pslug + ' workitembutton-scrap" id="' + pslug + '"target="_blank"><div class="grid-item-on-hover-vid videoposts"><h1></h1><h2><br>-<br><br></h2></div>' + player + '</a></li>');
+
                 } else {
 
                     $("#blogwrap").append('<li class="grid-item blogposts"></div><a href="' + url + '"class="' + pslug + ' workitembutton-scrap" id="' + pslug + '"target="_blank"><div class="grid-item-on-hover-vid"><h1></h1><h2><br>-<br><br></h2></div>' + player + '</a></li>');

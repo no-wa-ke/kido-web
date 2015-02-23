@@ -863,7 +863,11 @@
         $(".isotope").fadeIn(500);
         postLoad();
         checkURL();
-        $("img").unveil();
+        $("img").unveil(200, function() {
+  $(this).load(function() {
+    this.style.opacity = 1;
+  });
+});
     });
     // $("#pgb").parallax();
     (function(i, s, o, g, r, a, m) {
