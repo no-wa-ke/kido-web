@@ -4239,7 +4239,7 @@ div.introcontent {
         border-top: 1px solid #ccc
     }
     section#options.activatemobilemenu {
-        height: 176px
+        height: auto
     }
     div.namearrow {
         display: inline-block;
