@@ -663,12 +663,16 @@ $(document).ready(function() {
 
         if ($(this).hasClass('blogposts')) {
             location.hash = "Blogposts";
+              $(".name .subtitle").empty();
+            $(".name .subtitle").append("log");
         }
         if ($(this).hasClass('filter-music')) {
             location.hash = "filter-Music";
             $("#blogwrap").empty();
             $("#blogwrap").hide();
             $("#pgb").show();
+            $(".name .subtitle").empty();
+            $(".name .subtitle").append("Music");
         }
         if ($(this).hasClass('filter-all')) {
             location.hash = "filter-All";
@@ -676,6 +680,9 @@ $(document).ready(function() {
             $("#blogwrap").empty();
             $("#blogwrap").hide();
             $("#pgb").show();
+            $(".name .subtitle").empty();
+            $(".name .subtitle").append("Design | Projects");
+
         }
         if ($(this).hasClass('filter-selectedwork')) {
             location.hash = "filter-Selectedwork";
@@ -683,6 +690,8 @@ $(document).ready(function() {
             $("#blogwrap").empty();
             $("#blogwrap").hide();
             $("#pgb").show();
+            $(".name .subtitle").empty();
+            $(".name .subtitle").append("Selected Works");
         }
 
         $(window).scrollTop(0);
