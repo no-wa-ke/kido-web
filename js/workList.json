@@ -106,7 +106,9 @@
             ],
             "caption": "'Interminable Current'",
             "type": "Installation",
-            "textsEN": "'Interminable Current' is a sound installation performed by stepping-motors of floppy drives. Each motors are driven by PWMs that are generated from custom software/hardware, which intends to simulate musical notes. "
+            "textsEN": "'Interminable Current' is a sound installation performed by stepping-motors of floppy drives. Each motors are driven by PWMs that are generated from custom software/hardware, which intends to simulate musical notes. ",
+            "textsJP": "フロッピードライブを楽器とする。これは音楽である。",
+            "videoUrl": "https://player.vimeo.com/video/78449982?api=1&player_id=vimeo_player"
         }, 
          {
             "id": "propermirror",
