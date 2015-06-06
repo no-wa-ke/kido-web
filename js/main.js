@@ -561,7 +561,7 @@ $(document).ready(function() {
 
     init_work();
     totop();
-    distraction();
+    // distraction();
     // nav_toggles();
 
 

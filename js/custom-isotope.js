@@ -1,5 +1,6 @@
 function customIsotope() {
 
+    //TODO:gifだけ適応しない様にする
 
     var selector = ".selectedwork"
     var e = $(".grid");

@@ -5229,10 +5229,12 @@ div.introcontent {
         transition: height .3s;
         margin-top: 46px;
         padding: 0;
-        width: 120px
+        width: 120px;
+        pointer-events:none;
     }
     section#options.activatemobilemenu {
-        height: auto
+        height: auto;
+        pointer-events:visible;
     }
     div.namearrow {
         display: inline-block;

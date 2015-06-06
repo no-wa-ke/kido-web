@@ -67,7 +67,7 @@
                                 </li>
                                 <li><a href="#blogposts" data-option-value=".blogposts" class="mnu-item blogposts" id="Blogposts">BLOG.</a>
                                 </li>
-                                <li><a href="#about" class="mnu-item about" id="filter-About">ABOUT ME.</a>
+                                <li><a href="#about" data-option-value=".dummy"  class="mnu-item about" id="filter-About">ABOUT ME.</a>
                                 </li>
                             </ul>
                         </section>
@@ -683,8 +683,9 @@
         $("img").unveil(200, function() {
             $(this).load(function() {
                 this.style.opacity = 1;
-            });
-        });
+                });
+                      
+         });
     });
     // $("#pgb").parallax();
     (function(i, s, o, g, r, a, m) {
