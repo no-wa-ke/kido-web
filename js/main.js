@@ -561,7 +561,7 @@ $(document).ready(function() {
 
     init_work();
     totop();
-    // distraction();
+    distraction();
     // nav_toggles();
 
 
@@ -653,6 +653,8 @@ $(document).ready(function() {
     $("#aboutMe").click(function() {
 
         $("#aboutMe").fadeOut("slow");
+        $("#filter-Selectedwork").click();
+
 
     });
 

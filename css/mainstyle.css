@@ -4027,6 +4027,9 @@ width: 120px;
         left: 0;
         cursor: pointer
     }
+    div#sticker-sticky-wrapper.sticky-wrapper{
+        height:auto;
+    }
     #aboutMe {
         display: none;
         position: absolute!important;

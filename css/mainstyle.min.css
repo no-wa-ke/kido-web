@@ -4991,7 +4991,7 @@ div.introcontent {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 479px) {
-  
+
 .musicInfo p {
   font-size: 11px;
   font-weight: bold;
@@ -5235,6 +5235,7 @@ div.introcontent {
     section#options.activatemobilemenu {
         height: auto;
         pointer-events:visible;
+
     }
     div.namearrow {
         display: inline-block;
